@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Foldable Birthday Card for Sneha</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Open Sans', sans-serif;
+      /* Better background fit */
+      background: url('sneha.jpg.jpg') no-repeat center center fixed;
+      background-size: contain; /* changed from cover */
+      background-color: #f9f2f4; /* fallback light color */
+      color: #d6336c;
+      text-align: center;
+      padding: 20px;
+    }
+    .heart {
+      font-size: 4rem;
+      margin-bottom: 10px;
+      animation: heartbeat 1.5s infinite;
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      margin: 0 0 10px;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 0 0 30px;
+      color: #a80d42;
+    }
+    .open-message-btn {
+      font-size: 1.2rem;
+      padding: 12px 25px;
+      background: #d6336c;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+    .open-message-btn:hover {
+      background: #a80d42;
+    }
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    /* Responsive font sizes for smaller screens */
+    @media (max-width: 600px) {
+      .heart {
+        font-size: 3rem;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      p, .open-message-btn {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="heart">❤️</div>
+  <h1>Happy Birthday, My Love</h1>
+  <p>Click to open your special message, Sneha</p>
+  <a href="birthday-message.html" target="_blank" class="open-message-btn" role="button" aria-label="Open Birthday Message">
+    Open Message
+  </a>
+</body>
+</html>

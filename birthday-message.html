@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Birthday Message for Sneha</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.4);
+      overflow-y: auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-family: 'Great Vibes', cursive;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      max-width: 800px;
+      color: #ffdde1;
+    }
+
+    .play-sound-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background: #d6336c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      z-index: 2;
+    }
+
+    .play-sound-btn:hover {
+      background: #a80d42;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+
+      .play-sound-btn {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <video id="bg-video" autoplay loop muted playsinline>
+    <source src="sneha.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <button class="play-sound-btn" onclick="playWithSound()">🔊 Play with Sound</button>
+
+  <div class="content">
+    <h1>🎉 Happy Birthday, Babe! 🎂❤️</h1>
+    <p>
+      From the moment you came into my life, everything changed for the better. You brought a light into my world that I didn’t even know was missing 🌟.
+      Your smile melts my heart, your laugh is my favorite sound, and your presence brings me peace, happiness, and comfort that words can’t explain 🥹💞.
+      Every day with you feels like a dream come true — and today, on your special day, I just want to celebrate you… the incredible, beautiful soul who makes my life complete 💖✨.<br><br>
+
+      You’re not just my partner, you're my best friend, my heart, my home 🏡💑. Your love makes me strong, your kindness inspires me, and your hugs are the safest place in the world 🤗💕.
+      I fall for you more and more every single day, and today, I just want to wrap you in love and remind you how deeply you are cherished 😘🌹.<br><br>
+
+      I hope this birthday brings you as much happiness as you bring into my life every single moment. May your day be filled with smiles, surprises, cake 🎂, music 🎶, and everything your heart desires 🎁💫.
+      You deserve the whole universe and more 🌌🌺.<br><br>
+
+      So here’s to YOU — my babe, my forever, my everything. Thank you for being mine. I can’t wait to create more magical memories together 🥰🫶.<br><br>
+
+      I love you endlessly. Happy Birthday, my love! ❤️🎈
+    </p>
+  </div>
+
+  <script>
+    function playWithSound() {
+      const video = document.getElementById('bg-video');
+      video.muted = false;
+      video.play();
+    }
+  </script>
+
+</body>
+</html>
