@@ -15,7 +15,10 @@
       height: 100%;
       font-family: 'Open Sans', sans-serif;
       color: white;
-      overflow: hidden;
+      /* Allow scrolling */
+      margin: 0;
+      padding: 0;
+      background: black;
     }
 
     #bg-video {
@@ -30,15 +33,13 @@
     }
 
     .content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+      position: relative;
       min-height: 100vh;
-      padding: 20px;
+      padding: 40px 20px;
       background: rgba(0, 0, 0, 0.4);
-      overflow-y: auto;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     h1 {
@@ -50,12 +51,12 @@
     p {
       font-size: 1.2rem;
       line-height: 1.7;
-      max-width: 800px;
       color: #ffdde1;
+      white-space: pre-wrap; /* preserves line breaks if any */
     }
 
     .play-sound-btn {
-      position: absolute;
+      position: fixed;
       top: 20px;
       right: 20px;
       padding: 10px 20px;
